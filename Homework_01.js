@@ -68,20 +68,19 @@
 // console.log("The longest string from the array is " + array[index])
 // //----------------------------------------------------------------------------------
 
-// // 6. Choose all the indexes on the highest value from the given array. [1,6,23,8,4,98,3,7,3,98,4,98].
-// let array = [1,6,23,8,4,98,3,7,3,98,4,98];
-// let highestValue=array[0];
-// let index = 0;
+// 6. Choose all the indexes on the highest value from the given array. [1,6,23,8,4,98,3,7,3,98,4,98].
+let array = [1,6,23,8,4,98,3,7,3,98,4,98];
+let highestValue=array[0];
 
-// for(i=0; i<array.length; i++) {
-//     if(array[i] > highestValue) {highestValue = array[i]}
-//     }
-// for(i=0; i<array.length; i++) {
-//     if(array[i] == highestValue) {
-//         console.log(i)
-//     }
-// }
-// //----------------------------------------------------------------------------------
+for(let i=1; i<array.length; i++) {
+    if(array[i] > highestValue) {highestValue = array[i];}
+    }
+for(let i=1; i<array.length; i++) {
+    if(array[i] === highestValue) {
+        console.log(i);
+    }
+}
+//----------------------------------------------------------------------------------
 
 // // 7. Calculate average value from the given array for even numbers [1,6,23,8,4,98,3,7,3,98,4,98]
 // let array = [1,6,23,8,4,98,3,7,3,98,4,98];
